@@ -41,8 +41,12 @@ class FullName
 		 * 100 point precondition: The entered name consists of a First Name, Last Name and any number of Middle Names.
 		 *                         NOTE: "any number" means it is possible not to have no Middle Name at all.
 		 *                         You can assume the user is not entering any extra spaces.
-		 */
-
+		 */ 
+		
+		int Space = name.lastIndexOf(" ");
+		String FirstName = name.substring(0, Space);
+		String LastName = name.substring(Space);
+		return LastName + ", " + FirstName;
 
 
 
